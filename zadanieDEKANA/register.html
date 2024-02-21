@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Веб-игра: Регистрация</title>
+  <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+  <div id="loginScreen">
+    <h2>Выберите карту и введите ваше имя:</h2>
+    <select id="mapSelect">
+      <option value="map1">Карта 1</option>
+      <option value="map2">Карта 2</option>
+    </select>
+    <input type="text" id="playerName" placeholder="Введите ваше имя">
+    <button id="startButton" onclick="startGame()">Начать игру</button>
+  </div>
+
+  <script>
+    function startGame() {
+      var playerName = document.getElementById('playerName').value;
+
+      localStorage.setItem('playerName', playerName);
+
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

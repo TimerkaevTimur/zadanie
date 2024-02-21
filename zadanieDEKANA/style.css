@@ -1,0 +1,34 @@
+#map {
+  width: 1850px; /* Ширина карты */
+  height: 940px; /* Высота карты */
+  background-image: url("erhnonhe.jpg"); /* Путь к фоновому изображению */
+  background-size: cover; /* Масштабирование фонового изображения */
+  position: relative; /* Позиционирование относительно родительского элемента */
+}
+
+
+.player {
+  position: absolute;
+  width: 50px; /* Ширина игрока */
+  height: 50px; /* Высота игрока */
+  background-image: url(f0a9a0621be065cdea68011ee4cf7477.webp); /* Путь к изображению игрока */
+  background-size: cover; /* Масштабирование фона для заполнения */
+}
+
+/* Опциональные стили для противников и ловушек */
+.enemy {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.trap {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+  /* Стили могут быть настроены по мере необходимости */
+  

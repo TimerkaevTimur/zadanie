@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Веб-игра</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameScreen" style="display: none;">
+    <h2>Игра</h2>
+    <p>Имя: <span id="playerNameDisplay"></span></p>
+    <p>Текущее время: <span id="currentTime"></span></p>
+    <p>Время игры: <span id="gameTime"></span></p>
+    <p>Жизни: <span id="lives">5</span></p>
+    <div id="map">
+      <div class="player"></div> <!-- Элемент игрока -->
+    </div>
+  </div>
+
+  <div id="resultScreen" style="display: none;">
+    <h2>Результаты</h2>
+    <p>Время игры: <span id="resultTime"></span></p>
+    <p>Количество столкновений с монстрами: <span id="monsterCollisions"></span></p>
+    <p>Количество попаданий в ловушки: <span id="trapHits"></span></p>
+    <p>Оставшиеся жизни: <span id="remainingLives"></span></p>
+    <button id="restartButton">Играть сначала</button>
+  </div>
+  <div id="map">
+    <div class="player" style="left: 100px; top: 100px;"></div>
+    <!-- Измените left и top в соответствии с желаемым расположением игрока на карте -->
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

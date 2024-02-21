@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url(wqfqwf.jpg);
+  }
+  
+  #loginScreen {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+  }
+  
+  #loginScreen h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #mapSelect,
+  #playerName {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  #startButton {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  #startButton:hover {
+    background-color: #0056b3;
+  }
